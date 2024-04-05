@@ -1,0 +1,237 @@
+$padding: 15px;
+
+.header-contacto {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+
+
+    h1 {
+        color: $color;
+        font-size: 20px;
+        font-family: 'Arsenal', sans-serif;
+        justify-content: center;
+        margin-left: 50px;
+        flex-wrap: wrap;
+
+    }
+
+    .nav-contacto {
+        ul {
+            display: flex;
+            align-items: center;
+            margin-left: 200px;
+
+            li {
+                margin-right: 20px;
+                justify-content: space-between;
+                list-style-type: none;
+                margin-left: 50px;
+                font-size: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(112, 111, 111);
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    white-space: nowrap;
+                    
+
+                }
+
+            }
+        }
+    }
+}
+
+h3 {
+    margin-left: 300px;
+    margin-top: 100px;
+    color: black;
+
+}
+
+.formulario {
+    width: 800px;
+    height: auto;
+    margin: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+
+    .form-nombre {
+        padding: $padding;
+        padding-left: 150px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .form-celular {
+        padding: $padding;
+        padding-left: 140px;
+    }
+
+    .form-mail {
+        padding: $padding;
+        padding-left: 150px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-pinteres {
+        padding: $padding;
+        padding-left: 184px;
+    }
+
+    .form-option {
+        justify-content: center;
+    }
+
+    .comentario {
+        padding: 20px;
+
+
+    }
+}
+
+.iframe {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+}
+
+.ig {
+    margin-left: 500px;
+    font-size: 20px;
+    margin-bottom: 70px;
+    font-family: 'Architects Daughter', cursive;
+
+
+}
+
+.wsp-logo-contacto {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 80px;
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    
+    .header-contacto {
+        position: static;
+        width: 850px;
+        
+
+        h1 {
+            font-size: 60px;
+            margin-left: 300px;
+            padding: 0px;
+        }
+    }
+
+    .nav-contacto {
+
+        ul {
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            right: 130px;
+            
+    
+            li {
+                margin-right: 20px;
+                list-style-type: none;
+                font-size: 20px;
+                
+                
+
+    
+    
+                a {
+                    padding-inline: 80px;
+                    font-size: 50px;
+                    white-space: nowrap;
+                    
+                   
+                }
+    
+            }
+        }
+    }
+
+    main {
+        h3 {
+            color: black;
+            white-space: nowrap;
+            font-size: 35px;
+            margin-left: 50px;
+            margin-bottom: 150px;
+
+
+        }
+    }
+
+
+    p {
+        font-size: 30px;
+    }
+
+
+    .formulario {
+        margin: 10px;
+        /* Reducir el margen para una apariencia más compacta */
+        margin-left: 80px;
+
+
+        .form-nombre,
+        .form-mail,
+        .form-celular,
+        .comentario,
+        .form-pinteres {
+            width: 700px;
+            margin: 5px 0;
+            /* Ajustar el margen superior e inferior */
+            box-sizing: border-box;
+            /* Incluir el padding y el borde en el ancho total */
+            font-size: 25px;
+        }
+
+        .boton-enviar{
+            display: block;
+            font-size: 40px;
+        }
+
+    }
+
+    .iframe {
+        margin-left: 100px;
+    }
+
+    .ig {
+        margin-left: 100px;
+        font-size: 40px;
+        margin-bottom: 70px;
+        white-space: nowrap;
+    }
+
+    .wsp-logo-contacto {
+        position: fixed;
+        right: 80px;
+        bottom: 35px;
+        width: 100px;
+
+    }
+
+    
+}
+
+

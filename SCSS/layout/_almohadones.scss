@@ -1,0 +1,145 @@
+$text-align: center;
+
+.header-almohadones {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    z-index: 1000;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+    h1 {
+        color: rgb(124, 122, 117);
+        font-size: 20px;
+        font-family: 'Arsenal', sans-serif;
+        justify-content: center;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-almohadones {
+    ul {
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+
+        li {
+            margin-right: 20px;
+            justify-content: space-between;
+            list-style-type: none;
+            font-size: 20px;
+            margin-left: 50px;
+
+
+            a {
+                text-decoration: none;
+                color: rgb(112, 111, 111);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+        }
+    }
+}
+
+
+
+
+.img-almohadones {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    /* Espacio entre las imágenes */
+    justify-content: center;
+
+    img {
+        width: 350px;
+        /* Ancho de cada imagen */
+        height: 350px;
+        /* Altura automática para mantener la proporción */
+        border-radius: 10%;
+        box-shadow: 5px 5px 20px black;
+    }
+}
+
+.alm-frozen {
+    margin-left: 180px;
+}
+
+.alm-ww {
+    margin-right: 180px;
+}
+
+main {
+    .img-almohadones {
+
+        .p7,
+        .p8,
+        .p9,
+        .p10,
+        .p11,
+        .p12,
+        .p13 {
+            text-align: $text-align;
+        }
+    }
+}
+
+.wsp-logoalm {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 80px;
+}
+
+//medias querys//
+@media only screen and (max-width: 500px) {
+
+    .header-almohadones {
+        position: static;
+
+        h1 {
+            font-size: 40px;
+            margin-left: 80px;
+        }
+    }
+
+    .nav-almohadones {
+
+        
+        ul {
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            li {
+                margin-right: 20px;
+                justify-content: center;
+                list-style-type: none;
+                font-size: 20px;
+                margin-left: 0px;
+                
+
+    
+    
+                a {
+                    padding-inline: 80px;
+                    font-size: 30px;
+                }
+    
+            }
+        }
+    }
+    
+    .alm-frozen {
+        margin: 0;
+    }
+    
+    .alm-ww {
+        margin: 0;
+    }
+}
+

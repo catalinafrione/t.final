@@ -1,0 +1,754 @@
+@charset "UTF-8";
+body {
+  background-image: url(../Imagenes/fondopagina.jpg);
+  background-size: cover;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header h1 {
+  font-size: 30px;
+}
+.header .nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  justify-content: center;
+}
+.header .nav ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  color: rgb(112, 111, 111);
+  font-size: 25px;
+  font-family: "arsenal", sans-serif;
+  display: inline;
+}
+
+.parrafo1 {
+  background-color: rgb(214, 223, 201);
+}
+
+.encabezadoppal {
+  color: rgb(160, 130, 100);
+}
+
+h3, h2 {
+  color: rgb(102, 148, 108);
+  font-family: "arsenal", sans-serif;
+}
+
+h2 {
+  position: relative;
+  left: 200px;
+}
+
+p {
+  font-family: "Architects Daughter", cursive;
+}
+
+.imgdestacadas {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.imgdestacadas img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+  transition: 2s;
+}
+.imgdestacadas img:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 50px black;
+  transition: 2s;
+}
+
+.carousel.slide#carouselExampleInterval {
+  width: 800px;
+  justify-content: flex-start;
+  margin-top: 100px;
+  position: relative;
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+
+.wsp-logo-index {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    display: flex;
+    margin-left: 150px;
+    position: relative;
+    left: 170px;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .header {
+    position: initial;
+    width: 1000px;
+    margin-left: -30px;
+  }
+  .header ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    right: 130px;
+  }
+  .header ul li {
+    margin-right: 20px;
+    list-style-type: none;
+    font-size: 20px;
+  }
+  .header ul a {
+    padding-inline: 80px;
+    font-size: 60px;
+    white-space: nowrap;
+  }
+  .header h1 {
+    position: initial;
+    display: block;
+    margin-left: 250px;
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  body main h2 {
+    position: relative;
+    left: 80px;
+    white-space: nowrap;
+    font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .carousel.slide#carouselExampleInterval {
+    width: 750px;
+    justify-content: flex-start;
+    margin-top: 200px;
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 100px;
+  }
+  .imgdestacadas {
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .imgdestacadas img {
+    width: 350px;
+    height: 350px;
+    margin-top: 0px;
+    margin-left: 450px;
+  }
+  #carouselExampleInterval {
+    width: 300px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 50px;
+  }
+  footer .pcopy {
+    margin-left: 50px;
+  }
+  .wsp-logo-index {
+    position: fixed;
+    right: 150px;
+    bottom: 35px;
+    width: 100px;
+  }
+}
+.grid-cortinas {
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav" "cor1 cor2 cor3" "cor4 cor5 cor6";
+}
+
+.encabezado-cortinas {
+  grid-area: nav;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cortina1 {
+  grid-area: cor1;
+}
+
+.cortina2 {
+  grid-area: cor2;
+}
+
+.cortina3 {
+  grid-area: cor3;
+}
+
+.cortina4 {
+  grid-area: cor4;
+}
+
+.cortina5 {
+  grid-area: cor5;
+}
+
+.cortina6 {
+  grid-area: cor6;
+}
+
+.grid-cortinas img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+  margin-top: 100px;
+  margin-left: 30px;
+  display: flex;
+  gap: 100px;
+}
+
+.header-cortinas {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-cortinas h1 {
+  color: rgb(112, 111, 111);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-cortinas ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-cortinas ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 60px;
+}
+.nav-cortinas ul li a {
+  text-decoration: none;
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.wsp-logocor {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 80px;
+}
+
+body .p1, body .p2,
+body .p3,
+body .p4,
+body .p5,
+body .p6 {
+  margin-left: 40px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .grid-cortinas {
+    display: inline-block;
+  }
+  .encabezado-cortinas {
+    position: static;
+  }
+  .encabezado-cortinas h1 {
+    font-size: 40px;
+    margin-left: 100px;
+  }
+  .encabezado-cortinas .nav-cortinas ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .encabezado-cortinas .nav-cortinas ul li {
+    margin-right: 20px;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .encabezado-cortinas .nav-cortinas ul li a {
+    padding-inline: 80px;
+    font-size: 30px;
+  }
+  .wsp-logocor {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 100px;
+  }
+}
+.header-almohadones {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-almohadones h1 {
+  color: rgb(124, 122, 117);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-almohadones ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-almohadones ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-almohadones ul li a {
+  text-decoration: none;
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.img-almohadones {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  /* Espacio entre las imágenes */
+  justify-content: center;
+}
+.img-almohadones img {
+  width: 350px;
+  /* Ancho de cada imagen */
+  height: 350px;
+  /* Altura automática para mantener la proporción */
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+}
+
+.alm-frozen {
+  margin-left: 180px;
+}
+
+.alm-ww {
+  margin-right: 180px;
+}
+
+main .img-almohadones .p7,
+main .img-almohadones .p8,
+main .img-almohadones .p9,
+main .img-almohadones .p10,
+main .img-almohadones .p11,
+main .img-almohadones .p12,
+main .img-almohadones .p13 {
+  text-align: center;
+}
+
+.wsp-logoalm {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-almohadones {
+    position: static;
+  }
+  .header-almohadones h1 {
+    font-size: 40px;
+    margin-left: 80px;
+  }
+  .nav-almohadones ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-almohadones ul li {
+    margin-right: 20px;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .nav-almohadones ul li a {
+    padding-inline: 80px;
+    font-size: 30px;
+  }
+  .alm-frozen {
+    margin: 0;
+  }
+  .alm-ww {
+    margin: 0;
+  }
+}
+main .nav2 {
+  margin-bottom: 100px;
+}
+
+.header-velas {
+  position: sticky;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-velas h1 {
+  color: rgb(124, 122, 117);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-velas ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-velas ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-velas ul li a {
+  text-decoration: none;
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.img-velas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-velas img {
+  width: 250px;
+  /* Ancho de cada imagen */
+  height: 250px;
+  /* Altura automática para mantener la proporción */
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+}
+.img-velas #Aromáticas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-left: 50px;
+}
+.img-velas #Aromáticas .p14,
+.img-velas #Aromáticas .p15,
+.img-velas #Aromáticas .p16,
+.img-velas #Aromáticas .p17 {
+  text-align: center;
+}
+.img-velas #Signos {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-left: 500px;
+  justify-content: center;
+}
+.img-velas #Signos .p18 {
+  text-align: center;
+}
+.img-velas #Personalizadas {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+.img-velas #Personalizadas .p19,
+.img-velas #Personalizadas .p20,
+.img-velas #Personalizadas .p21 {
+  text-align: center;
+}
+
+.wsp-logovel {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-velas {
+    width: 700px;
+  }
+  .header-velas h1 {
+    font-size: 70px;
+    margin-left: 90px;
+  }
+  .nav-velas {
+    width: 500px;
+    margin-left: 100px;
+  }
+  .nav-velas ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-velas ul li {
+    margin-right: 0px;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .nav-velas ul li a {
+    padding-inline: 80px;
+    font-size: 40px;
+  }
+  .nav2 a {
+    font-size: 40px;
+  }
+  .img-velas {
+    justify-content: initial;
+  }
+  .img-velas img {
+    width: 400px;
+    height: 400px;
+  }
+  .img-velas #Signos {
+    margin-left: 150px;
+    justify-content: initial;
+  }
+  .img-velas #Personalizadas {
+    margin-left: 150px;
+    justify-content: initial;
+  }
+  .img-velas #Aromáticas {
+    margin-left: 150px;
+  }
+}
+.header-contacto {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+.header-contacto h1 {
+  color: rgb(112, 111, 111);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+.header-contacto .nav-contacto ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.header-contacto .nav-contacto ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: 50px;
+  font-size: 20px;
+}
+.header-contacto .nav-contacto ul li a {
+  text-decoration: none;
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  white-space: nowrap;
+}
+
+h3, h2 {
+  margin-left: 300px;
+  margin-top: 100px;
+  color: black;
+}
+
+.formulario {
+  width: 800px;
+  height: auto;
+  margin: 500px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 300px;
+}
+.formulario .form-nombre {
+  padding: 15px;
+  padding-left: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.formulario .form-celular {
+  padding: 15px;
+  padding-left: 140px;
+}
+.formulario .form-mail {
+  padding: 15px;
+  padding-left: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.formulario .form-pinteres {
+  padding: 15px;
+  padding-left: 184px;
+}
+.formulario .form-option {
+  justify-content: center;
+}
+.formulario .comentario {
+  padding: 20px;
+}
+
+.iframe {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 400px;
+}
+
+.ig {
+  margin-left: 500px;
+  font-size: 20px;
+  margin-bottom: 70px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.wsp-logo-contacto {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-contacto {
+    position: static;
+    width: 850px;
+  }
+  .header-contacto h1 {
+    font-size: 60px;
+    margin-left: 300px;
+    padding: 0px;
+  }
+  .nav-contacto ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    right: 130px;
+  }
+  .nav-contacto ul li {
+    margin-right: 20px;
+    list-style-type: none;
+    font-size: 20px;
+  }
+  .nav-contacto ul li a {
+    padding-inline: 80px;
+    font-size: 50px;
+    white-space: nowrap;
+  }
+  main h3, main h2 {
+    color: black;
+    white-space: nowrap;
+    font-size: 35px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .formulario {
+    margin: 10px;
+    /* Reducir el margen para una apariencia más compacta */
+    margin-left: 80px;
+  }
+  .formulario .form-nombre,
+  .formulario .form-mail,
+  .formulario .form-celular,
+  .formulario .comentario,
+  .formulario .form-pinteres {
+    width: 700px;
+    margin: 5px 0;
+    /* Ajustar el margen superior e inferior */
+    box-sizing: border-box;
+    /* Incluir el padding y el borde en el ancho total */
+    font-size: 25px;
+  }
+  .formulario .boton-enviar {
+    display: block;
+    font-size: 40px;
+  }
+  .iframe {
+    margin-left: 100px;
+  }
+  .ig {
+    margin-left: 100px;
+    font-size: 40px;
+    margin-bottom: 70px;
+    white-space: nowrap;
+  }
+  .wsp-logo-contacto {
+    position: fixed;
+    right: 80px;
+    bottom: 35px;
+    width: 100px;
+  }
+}
+p {
+  font-family: "Architects Daughter", cursive;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,182 @@
+$color: rgb(112, 111, 111);
+
+.grid-cortinas {
+    display: grid;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'nav nav nav'
+        'cor1 cor2 cor3'
+        'cor4 cor5 cor6';
+}
+
+
+.encabezado-cortinas {
+    grid-area: nav;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cortina1 {
+    grid-area: cor1;
+}
+
+.cortina2 {
+    grid-area: cor2;
+}
+
+.cortina3 {
+    grid-area: cor3;
+}
+
+.cortina4 {
+    grid-area: cor4;
+}
+
+.cortina5 {
+    grid-area: cor5;
+}
+
+.cortina6 {
+    grid-area: cor6;
+}
+
+.grid-cortinas img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 20px black;
+    margin-top: 100px;
+    margin-left: 30px;
+    display: flex;
+    gap: 100px;
+}
+
+.header-cortinas {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    z-index: 1000;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+    h1 {
+        color: $color;
+        font-size: 20px;
+        font-family: 'Arsenal', sans-serif;
+        justify-content: center;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-cortinas {
+    ul {
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+
+        li {
+            margin-right: 20px;
+            justify-content: space-between;
+            list-style-type: none;
+            font-size: 20px;
+            margin-left: 60px;
+
+            a {
+                text-decoration: none;
+                color: $color;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                white-space: nowrap;
+                font-size: 20px;
+            }
+
+
+        }
+    }
+}
+
+.wsp-logocor {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 80px;
+}
+
+body {
+    .p1 {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6 {
+        @extend .p1;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .grid-cortinas {
+        display: inline-block;
+    }
+
+
+    .encabezado-cortinas {
+
+        position: static;
+
+
+        h1 {
+            font-size: 40px;
+            margin-left: 100px;
+        }
+
+        .nav-cortinas {
+           
+            ul {
+                margin: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li {
+                    margin-right: 20px;
+                    justify-content: center;
+                    list-style-type: none;
+                    font-size: 20px;
+                    margin-left: 0px;
+
+
+
+
+                    a {
+                        padding-inline: 80px;
+                        font-size: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+        .wsp-logocor {
+            position: fixed;
+            right: 15px;
+            bottom: 35px;
+            width: 100px;
+        }
+
+
+    }

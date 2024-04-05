@@ -1,0 +1,194 @@
+$margin-top: 70px;
+$gap: 80px;
+$text-align: center;
+
+
+
+main {
+    .nav2 {
+        margin-bottom: 100px;
+    }
+}
+
+
+.header-velas {
+    position: sticky;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    z-index: 1000;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+    h1 {
+        color: rgb(124, 122, 117);
+        font-size: 20px;
+        font-family: 'Arsenal', sans-serif;
+        justify-content: center;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-velas {
+    ul {
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+
+
+        li {
+            margin-right: 20px;
+            justify-content: space-between;
+            list-style-type: none;
+            font-size: 20px;
+            margin-left: 50px;
+
+            a {
+                text-decoration: none;
+                color: rgb(112, 111, 111);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+        }
+    }
+}
+
+.img-velas {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    img {
+        width: 250px;
+        /* Ancho de cada imagen */
+        height: 250px;
+        /* Altura automática para mantener la proporción */
+        border-radius: 10%;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    #Aromáticas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap;
+        margin-left: 50px;
+
+        .p14,
+        .p15,
+        .p16,
+        .p17 {
+            text-align: $text-align;
+        }
+    }
+
+    #Signos {
+        margin-top: $margin-top;
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap;
+        margin-left: 500px;
+        justify-content: center;
+
+        .p18 {
+            text-align: $text-align;
+        }
+    }
+
+    #Personalizadas {
+        margin-top: $margin-top;
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap;
+        margin-left: 200px;
+        margin-bottom: 100px;
+
+        .p19,
+        .p20,
+        .p21 {
+            text-align: $text-align;
+        }
+
+    }
+
+}
+
+.wsp-logovel {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+
+
+    .header-velas {
+        width: 700px;
+
+        h1 {
+            font-size: 70px;
+            margin-left: 90px;
+
+        }
+    }
+
+    .nav-velas {
+        width: 500px;
+        margin-left: 100px;
+
+        ul {
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            li {
+                margin-right: 0px;
+                justify-content: center;
+                list-style-type: none;
+                font-size: 20px;
+                margin-left: 0px;
+
+
+
+
+                a {
+                    padding-inline: 80px;
+                    font-size: 40px;
+                }
+
+            }
+        }
+    }
+
+    .nav2 {
+        a {
+            font-size: 40px;
+        }
+    }
+
+    .img-velas {
+        justify-content: initial;
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+
+        #Signos {
+            margin-left: 150px;
+            justify-content: initial
+        }
+
+        #Personalizadas {
+            margin-left: 150px;
+            justify-content: initial;
+
+        }
+
+        #Aromáticas {
+            margin-left: 150px;
+        }
+
+    }
+}
